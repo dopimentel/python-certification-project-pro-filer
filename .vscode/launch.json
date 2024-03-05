@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: ProFiler",
+            "type": "python",
+            "autoReload": {
+                "enable": true
+            },
+            "request": "launch",
+            "program": "${workspaceFolder}/pro_filer",
+            "console": "integratedTerminal",
+            "args": [
+                ".",
+                "deepest-file"
+            ],
+            "justMyCode": true,
+            
+        }
+
+    ]
+}
