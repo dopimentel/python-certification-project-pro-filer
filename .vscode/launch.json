@@ -12,7 +12,9 @@
             "console": "integratedTerminal",
             "args": [
                 ".",
-                "deepest-file"
+                "search-file",
+                "trybe",
+                "--no-case-sensitive",
             ],
             "justMyCode": true,
             
