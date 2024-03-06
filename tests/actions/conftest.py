@@ -52,3 +52,14 @@ def get_file_details():
         return file_name, size, last_modified, file_extension
 
     return _get_file_details
+
+
+@pytest.fixture
+def mock_context(existing_file, file_with_no_extension):
+    return {
+        "all_files": [
+            existing_file,
+            existing_file,
+            file_with_no_extension,
+        ]
+    }

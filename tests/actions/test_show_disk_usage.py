@@ -2,18 +2,6 @@ import os
 from unittest.mock import patch
 from pro_filer.actions.main_actions import show_disk_usage  # NOQA
 
-import pytest
-
-
-@pytest.fixture
-def mock_context(existing_file, file_with_no_extension):
-    return {
-        "all_files": [
-            existing_file,
-            file_with_no_extension,
-        ]
-    }
-
 
 def test_show_disk_usage(capsys, mock_context):
     with patch(
